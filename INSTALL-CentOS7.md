@@ -55,7 +55,9 @@ yum install -y epel-release
 yum install -y nginx
 ```
 ###### Create Proxy configuration
-Remove server block from the default config file /etc/nginx/nginx.conf
+
+Из конфиг файла /etc/nginx/nginx.conf удаляем полностью блок "server". 
+
 And create a new config file
 ```
 cat >>/etc/nginx/conf.d/kibana.conf<<EOF
